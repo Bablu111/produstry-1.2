@@ -1,0 +1,226 @@
+/*
+    Theme name: produstry
+    version: 1.0
+    author name: Robin
+    author url: #
+*/
+
+/*
+    1. common css
+    2.home page(
+       1. head area,
+       2.banner section,
+    )
+*/
+
+/*common css here*/
+
+:root{
+
+    --first-color: #ffca36;
+    --second-color: #353535;
+}
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,ul,span{
+
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol{
+    
+    list-style: none;
+
+}
+
+a{
+    text-decoration: none;
+    display: block;
+}
+
+li{
+    display: inline-block;
+}
+
+
+
+/*common css here*/
+
+
+/*home page start*/
+
+/*head start*/
+
+
+header{
+
+    background-color: var(--first-color);
+}
+
+
+header .address{
+
+    font-size: 14px;
+    color: var(--second-color);
+    text-align: center;
+    padding-top: 13px;
+}
+
+header .welcome{
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    padding-top: 13px;
+    clip-path: polygon(9% 0, 100% 0%, 93% 100%, 0% 100%);
+    background-color: var(--second-color);
+
+}
+
+
+
+header .icon ul li a{
+    color: var(--second-color);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    
+    
+}
+
+header .icon ul li{
+    position: relative;
+}
+
+header .icon ul li::after{
+
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: var(--second-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: 0.60s;
+    
+}
+
+header .icon ul li::before{
+
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: var(--second-color);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: scale(0);
+    transition: 0.60s;
+    
+}
+
+header .icon ul li a::after{
+
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--second-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: 0.60s;
+    
+}
+
+header .icon ul li a::before{
+
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--second-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scale(0);
+    transition: 0.60s;
+    
+}
+
+header .icon ul li:hover::after,
+header .icon ul li:hover::before,
+header .icon ul li a:hover::after,
+header .icon ul li a:hover::before{
+
+    transform: scale(1.3)
+}
+
+#navbarSupportedContent .menu_icon{
+    color: var(--first-color);
+}
+    
+/*#navbarSupportedContent{
+
+    position: relative;
+}
+
+
+.my_class ul li::after{
+
+    content: "";
+    width: 1px;
+    height: 100px;
+    background-color: var(--first-color);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: scale(1);
+
+
+}
+
+.my_class ul .nav-item li::before{
+
+    content: "";
+    width: 1px;
+    height: 100px;
+    background-color: var(--first-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(1);
+}*/
+
+
+/*head end*/
+
+
+/*banner section start*/
+
+#banner .slide_banner{
+
+    height: 700px;
+    background-size:cover;
+    
+    background-repeat: no-repeat;
+}
+
+
+
+/*banner section end*/
+
+
+
+
+
+
+/*home page end*/
